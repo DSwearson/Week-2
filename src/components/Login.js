@@ -10,7 +10,7 @@ import {
 
 import bgImg from "../images/background.jpg";
 
-export default function Login() {
+export default function Login({setScreen}) {
 
 
 
@@ -44,6 +44,10 @@ export default function Login() {
 
 
     return <Box {...bgStyles}>
+        <div className="logo" onClick={()=> setScreen("home")}>
+        
+        [Logo]
+      </div>
             <Box {...boxStyles} >
             <form onSubmit={submitHandler}>
                 <FormControl>

@@ -1,9 +1,10 @@
-import {useEffect} from 'react'
+import {useEffect, useState} from 'react'
 import Login from './components/Login';
 import Home from './components/Home';
+import "./styles/app.css"
 
 function App() {
-
+  const [screen, setScreen] = useState("home");
 
 
   useEffect(() => {
@@ -14,12 +15,13 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        
-        Week 3
-      </header>
-      <Home />
-      {/*<Login/>*/}
+      { screen == "home" ? <Home setScreen={setScreen} /> : ""}
+
+      { screen == "login" ? <Login setScreen={setScreen} /> : ""}
+
+ 
+      
+
     </div>
   );
 }
