@@ -16,10 +16,10 @@ function App() {
     <div className="App">
       <header className="App-header">
         
-        Week 3
+        Week 2
       </header>
-      <Home />
-      {/*<Login/>*/}
+      {/*<Home />*/}
+    <Login/>
     </div>
   );
 }
