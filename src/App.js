@@ -1,5 +1,6 @@
 import {useEffect} from 'react'
 import Login from './components/Login';
+import Home from './components/Home';
 
 function App() {
 
@@ -15,9 +16,10 @@ function App() {
     <div className="App">
       <header className="App-header">
         
-        Week 2
+        Week 3
       </header>
-      <Login/>
+      <Home />
+      {/*<Login/>*/}
     </div>
   );
 }
